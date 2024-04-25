@@ -1,0 +1,10 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.product:hover img{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
