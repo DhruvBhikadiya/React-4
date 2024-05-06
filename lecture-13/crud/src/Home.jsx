@@ -59,22 +59,15 @@ const Home = () => {
             </form>
             {/* INSERT END */}
                 
-            {/* UPDATE START */}
-            <form>
-                <input type="text" value={userName} onChange={(e)=>setUSerName(e.target.value)} placeholder="Enter username" /><br /><br />
-                <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Enter email" /><br /><br />
-                <input type="text" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Enter password" /><br /><br />
-                <button type="submit">Submit</button>
-            </form>
-            {/* UPDATE END */}
+            
 
             {/* VIEW START  */}
             {user.map((v,i) => (
-                <>
+                <div>
                     <h1>{v.userName}</h1>
                     <h2>{v.email}</h2>
                     <h2>{v.password}</h2>
-                </>
+                </div>
             ))}
             {/* VIEW END */}
 
