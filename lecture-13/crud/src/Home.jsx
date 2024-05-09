@@ -47,6 +47,18 @@ const Home = () => {
     // UPDTAE START
     // UPDTAE END
 
+    // DELETE START
+    const handleDelete = (id) => {
+        const deletedata = user.filter((item) => item.id !== id)
+        setUSer(deletedata);
+
+        fetch(`http://localhost:8000/users/${id}`,{
+            method: "delete"
+        })
+        .then((res) => console.log("data deleted successfully"));
+    }
+    // DELETE END
+
     return (
         <div>
 
@@ -63,10 +75,11 @@ const Home = () => {
 
             {/* VIEW START  */}
             {user.map((v,i) => (
-                <div>
+                <div key={v.id} style={{boxShadow:"1px 1px 10px 0px white",borderRadius:"70px",padding:"50px",marginTop:"50px"}}>
                     <h1>{v.userName}</h1>
                     <h2>{v.email}</h2>
-                    <h2>{v.password}</h2>
+                    <h2>{v.password}</h2><br /><br />
+                    <button onClick={() => handleDelete(v.id)}>Delete</button>
                 </div>
             ))}
             {/* VIEW END */}

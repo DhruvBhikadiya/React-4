@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "userName": "dharmik",
-      "email": "dharmik@gmail.com",
-      "password": "2123",
-      "id": 1
-    },
-    {
       "userName": "Dhruv",
       "email": "dhriv@gmail.com",
       "password": "123",
@@ -29,12 +23,6 @@
       "email": "savaliya@gmail.com",
       "password": "123",
       "id": 5
-    },
-    {
-      "userName": "savan",
-      "email": "donga@gmail.com",
-      "password": "123",
-      "id": 6
     }
   ]
 }
