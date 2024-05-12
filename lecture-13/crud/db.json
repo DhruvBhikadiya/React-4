@@ -2,7 +2,7 @@
   "users": [
     {
       "userName": "Dhruv",
-      "email": "dhriv@gmail.com",
+      "email": "dhruv@gmail.com",
       "password": "123",
       "id": 2
     },
@@ -20,9 +20,15 @@
     },
     {
       "userName": "daxit",
-      "email": "savaliya@gmail.com",
+      "email": "daxit@gmail.com",
       "password": "123",
       "id": 5
+    },
+    {
+      "userName": "dhrumil",
+      "email": "dhrumil@gmail.com",
+      "password": "123dhrumil",
+      "id": 6
     }
   ]
 }
